@@ -1,0 +1,142 @@
+.saved-skills {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 30px;
+}
+
+.saved-header {
+  margin-bottom: 30px;
+}
+
+.saved-header h1 {
+  margin: 0 0 8px;
+  font-size: 32px;
+}
+
+.saved-header p {
+  margin: 0;
+  color: #64748b;
+}
+
+.saved-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.saved-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 22px;
+}
+
+.saved-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.saved-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  background: #eff6ff;
+  color: #2563eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.saved-card-top span {
+  background: #f1f5f9;
+  padding: 5px 9px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.saved-card h2 {
+  margin: 20px 0 8px;
+  font-size: 19px;
+}
+
+.saved-category {
+  color: #2563eb;
+  font-size: 14px;
+}
+
+.saved-user {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.saved-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.view-btn,
+.remove-btn {
+  padding: 9px 13px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.view-btn {
+  background: #2563eb;
+  color: white;
+}
+
+.remove-btn {
+  background: white;
+  color: #dc2626;
+  border: 1px solid #fecaca;
+}
+
+.empty-saved {
+  text-align: center;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 60px 20px;
+}
+
+.empty-saved p {
+  color: #64748b;
+}
+
+.discover-btn {
+  display: inline-block;
+  margin-top: 15px;
+  background: #2563eb;
+  color: white;
+  padding: 11px 18px;
+  border-radius: 7px;
+  text-decoration: none;
+}
+
+@media (max-width: 800px) {
+  .saved-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .saved-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .saved-actions {
+    flex-direction: column;
+  }
+
+  .view-btn,
+  .remove-btn {
+    text-align: center;
+  }
+}

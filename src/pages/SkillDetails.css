@@ -1,0 +1,134 @@
+.skill-details {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 30px;
+}
+
+.back-link {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.skill-details-card {
+  margin-top: 30px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 15px;
+  padding: 40px;
+  display: flex;
+  gap: 35px;
+}
+
+.skill-details-icon {
+  width: 90px;
+  height: 90px;
+  background: #eff6ff;
+  color: #2563eb;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.skill-details-content {
+  flex: 1;
+}
+
+.skill-level {
+  display: inline-block;
+  background: #eff6ff;
+  color: #2563eb;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.skill-details-content h1 {
+  margin: 15px 0 5px;
+  font-size: 32px;
+}
+
+.skill-category {
+  color: #2563eb;
+  font-weight: 500;
+}
+
+.skill-description {
+  color: #64748b;
+  line-height: 1.7;
+  max-width: 600px;
+}
+
+.skill-owner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.owner-avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #111827;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.skill-owner p {
+  margin: 4px 0 0;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.skill-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.swap-btn,
+.save-btn {
+  padding: 11px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.swap-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+}
+
+.save-btn {
+  background: white;
+  color: #2563eb;
+  border: 1px solid #2563eb;
+}
+
+@media (max-width: 650px) {
+  .skill-details-card {
+    flex-direction: column;
+    padding: 25px;
+  }
+
+  .skill-details-content h1 {
+    font-size: 26px;
+  }
+
+  .skill-actions {
+    flex-direction: column;
+  }
+
+  .swap-btn,
+  .save-btn {
+    width: 100%;
+  }
+}

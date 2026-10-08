@@ -1,0 +1,171 @@
+.video-call-page {
+  min-height: calc(100vh - 70px);
+  background: #111827;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.video-area {
+  width: 100%;
+  max-width: 1100px;
+  height: 650px;
+  position: relative;
+  background: #020617;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+/* Remote video */
+
+.remote-video {
+  width: 100%;
+  height: 100%;
+  background: #1e293b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.remote-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #2563eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.remote-video h2 {
+  margin: 20px 0 5px;
+}
+
+.remote-video p {
+  color: #cbd5e1;
+}
+
+/* Your video */
+
+.your-video {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 200px;
+  height: 140px;
+  background: #334155;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.camera-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.camera-off {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.camera-off p {
+  margin: 8px 0 0;
+}
+
+/* Call info */
+
+.call-info {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+}
+
+.call-info span {
+  font-size: 13px;
+  color: #cbd5e1;
+}
+
+.call-info p {
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+/* Controls */
+
+.call-controls {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.control-btn {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.control-btn.off {
+  background: #475569;
+  color: white;
+}
+
+.end-call-btn {
+  padding: 14px 22px;
+  border: none;
+  border-radius: 25px;
+  background: #dc2626;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.end-call-btn:hover {
+  background: #b91c1c;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .video-area {
+    height: calc(100vh - 110px);
+  }
+
+  .your-video {
+    width: 120px;
+    height: 90px;
+    right: 10px;
+    top: 10px;
+  }
+
+  .call-info {
+    top: 10px;
+    left: 10px;
+  }
+
+  .call-controls {
+    bottom: 15px;
+  }
+}

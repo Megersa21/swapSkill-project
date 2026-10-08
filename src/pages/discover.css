@@ -1,0 +1,154 @@
+.discover {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 30px;
+}
+
+.discover-header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.discover-header p {
+  color: #64748b;
+}
+
+/* Search */
+
+.discover-search {
+  display: flex;
+  gap: 10px;
+  margin: 30px 0 20px;
+}
+
+.discover-search input {
+  flex: 1;
+  padding: 13px 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.discover-search button {
+  padding: 0 22px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+/* Categories */
+
+.categories {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.categories button {
+  padding: 8px 15px;
+  border: 1px solid #d1d5db;
+  background: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.categories button:first-child {
+  background: #2563eb;
+  color: white;
+  border-color: #2563eb;
+}
+
+/* Cards */
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.discover-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 22px;
+  transition: 0.2s;
+}
+
+.discover-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+.card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skill-avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  background: #eff6ff;
+  color: #2563eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.card-top span {
+  font-size: 12px;
+  background: #f1f5f9;
+  padding: 5px 9px;
+  border-radius: 5px;
+}
+
+.discover-card h2 {
+  font-size: 19px;
+  margin: 20px 0 8px;
+}
+
+.category {
+  color: #2563eb;
+  font-size: 14px;
+}
+
+.teacher {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.view-skill {
+  display: inline-block;
+  margin-top: 15px;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Mobile */
+
+@media (max-width: 800px) {
+  .skill-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .skill-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .discover-search {
+    flex-direction: column;
+  }
+
+  .discover-search button {
+    padding: 12px;
+  }
+}
